@@ -1,0 +1,22 @@
+---
+title: "Business Mathematics for UiTM"
+author: "Anis Mardiana Ahmad, Noor Hafizah Zainal Aznam, ..."
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+# output: bookdown::gitbook
+documentclass: book
+bibliography: book.bib
+biblio-style: apalike
+link-citations: yes
+description: "The course is primarily designed to strengthen the fundamental concepts of mathematics with emphasis on business application and problem solving."
+---
+
+# Course Learning Outcomes {-}
+
+At the end of the course, students should be able to:
+
+1\. Express knowledge of the basic fundamental concepts of mathematics in solving business application problems. (C2)
+
+2\. Solve mathematical problems involving interest and installment purchase in business application problems. (C4)
+
+3\. Apply mathematical concepts to solve mathematical problems in trading and retailing. (C4)

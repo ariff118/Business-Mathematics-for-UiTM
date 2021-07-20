@@ -1,0 +1,16 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#637238"
+
+bookdown::pdf_book:
+  extra_dependencies: awesomebox
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  bibliography: book.bib
+  biblio-style: apalike
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
+bookdown::word_document2:
+    toc: true

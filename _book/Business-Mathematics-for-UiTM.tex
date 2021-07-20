@@ -1,0 +1,400 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Business Mathematics for UiTM},
+  pdfauthor={Anis Mardiana Ahmad, Noor Hafizah Zainal Aznam, \ldots{}},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{awesomebox}
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{Business Mathematics for UiTM}
+\author{Anis Mardiana Ahmad, Noor Hafizah Zainal Aznam, \ldots{}}
+\date{2021-06-29}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{course-learning-outcomes}{%
+\chapter*{Course Learning Outcomes}\label{course-learning-outcomes}}
+\addcontentsline{toc}{chapter}{Course Learning Outcomes}
+
+At the end of the course, students should be able to:
+
+1. Express knowledge of the basic fundamental concepts of mathematics in solving business application problems. (C2)
+
+2. Solve mathematical problems involving interest and installment purchase in business application problems. (C4)
+
+3. Apply mathematical concepts to solve mathematical problems in trading and retailing. (C4)
+
+\hypertarget{intro}{%
+\chapter{Fundamental Concepts of Mathematics}\label{intro}}
+
+\begin{noteblock}
+Tidak ada satu pun sifat yang diberikan Tuhan kepada kita yang tidak berguna - \emph{HAMKA}
+
+\end{noteblock}
+
+\begin{quote}
+Tidak ada satu pun sifat yang diberikan Tuhan kepada kita yang tidak berguna - HAMKA
+\end{quote}
+
+\begin{quote}
+Learning Objectives
+
+At the end of the chapter, students are expected to gain the following knowledge:
+
+t-1-1 I am able to solve word problems and applications related to ratio and proportion.\\
+t-1-2 I am able to identify the different form of numbers.\\
+t-1-3 I am able to convert fraction to decimal and vice versa.\\
+t-1-4 I am able to convert fraction and decimal to percentage and vice versa.\\
+t-1-5 I am able to solve arithmetic operations using BODMAS rule.\\
+t-1-6 I am able to solve arithmetic operations involving fraction and decimal by using calculator.\\
+t-1-7 I am able to solve linear equation in one variable.\\
+t-1-8 I am able to solve word problems and applications related to linear equation in one variable.\\
+t-1-9 I am able to plot linear equation graph and interprate the graph.
+\end{quote}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+This chapter introduces the students with the fundamental concepts of mathematics that is divided into there main sections, namely, 1. Introduction to arithmetic operations, 2. linear equations, and 3. Fractions, decimals, ratios and percentages.
+
+\hypertarget{classification-of-real-numbers}{%
+\section{Classification of real numbers}\label{classification-of-real-numbers}}
+
+The real number system began to be learned and used in the early stages of schooling. However the development of real numbers must be understood and used more carefully so that a mathematical sentence can be fully defined. The following is an explanation of the development of real numbers.
+
+A number is a feature of a set that does not depend on the properties of the elements of that set. The intended feature is represented by set symbols
+
+\[\{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 \}\]
+
+common in everyday use. The symbols were inherited from the Indians and introduced by the Arabs. Each symbol is given a digit or number name and any combination of those symbols is called a number. These numbers are known by their properties as follows shown in the table and figure illustration below.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.14}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.56}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.29}}@{}}
+\toprule
+Type & Description & Example \\
+\midrule
+\endhead
+Natural Number (\(N\) or \(Z^+\)) & Positive numbers & \(\{1,2,3,4,…\}\) \\
+Whole Number (\(W\)) & 0 and positive numbers & \(\{0,1,2,3,4,…\}\) \\
+Negative Integers (\(Z^-\)) & Negative numbers & \(\{…, -3,-2,-1\}\) \\
+Integers (\(Z\)) & natural numbers, negative number, and zero & \(\{...,-2,-1,0,1,2,3,4,…\}\) \\
+Rational Numbers (\(Q\)) & Numbers that can be written in the form of a fraction \(\frac{a}{b}\) where \(a\) and \(b\) are integers and \(b\ne0\)
+
+Example: \(\frac{1}{2}=0.5\), \(6\frac{1}{3}=6.3333…\ (6.\bar{3})\) & \(\{ …,-3,-\frac{5}{2},0,\frac{2}{5},1,4.67,5.\bar{013}, …\}\) \\
+Irrational Numbers (\(I\)) & Numbers that cannot be written in the form of \(\frac{a}{b}\) or numbers that do not have finite or repeated decimal digits & \(\{…,\pi,\sqrt{13},e,…\}\)
+
+\(\sqrt{2}=1.4142136…\)
+
+\(\pi=3.14159265…\)
+
+\(e=2.71821818…\) \\
+Real Numbers (\(R\)) & All rational and irrational numbers
+
+\(R=Q\cup I\) \(= \{\infty ,..., -\infty \}\) & \(\{…,-4,-\frac{5}{3},0,2,3.69,\sqrt{2},\pi,…\}\) \\
+\bottomrule
+\end{longtable}
+
+Table 1: Table summary of some number sets in a real number set
+
+\begin{figure}
+
+{\centering \includegraphics{Business-Mathematics-for-UiTM_files/figure-latex/numbers-1} 
+
+}
+
+\caption{Real numbers and important subset}\label{fig:numbers}
+\end{figure}
+
+\hypertarget{real-numbers}{%
+\subsection{Real Numbers}\label{real-numbers}}
+
+Real numbers denoted as \(R\) as in Figure \ref{fig:numbers} consist of all numbers that can be categorized as rational numbers (\(Q\)) and irrational numbers (\(I\)).
+
+\hypertarget{rational-numbers}{%
+\subsection{Rational Numbers}\label{rational-numbers}}
+
+A rational numbers denoted as (\(Q\)) is defined as numbers that can be written in the form of a fraction \(\frac{a}{b}\) such that \(a\) and \(b\) are integers and \(b \ne 0\). Examples of rational numbers that takes the form of a fractions as define are \(\{ \frac{18}{5}, \frac{2}{3}, 5=\frac{5}{1} \}\) or even \(\{ \sqrt{9}=3=\frac{3}{1} \}\).
+
+In addition, rational numbers can also takes the form of numbers that have terminating decimals or repeated digits. Among the examples are numbers such as \(\{ 2.75, 1.5, 0.8, 0.666666, 0.0238238\bar{238} \}\). The first three values in the previous example are considered to have a characteristics of a terminating decimals, while the last two numbers are examples of rational numbers with repeated digits.
+
+\hypertarget{natural-numbers}{%
+\subsection{Natural Numbers}\label{natural-numbers}}
+
+A natural number is a number used to count most elements in a set. The notation of natural number representation is \(N\) with
+
+\[N = \{ 1, 2, 3, 4, ... \}\]
+
+\hypertarget{form-of-numbers}{%
+\section{Form of numbers}\label{form-of-numbers}}
+
+\hypertarget{operation-of-numbers}{%
+\section{Operation of numbers}\label{operation-of-numbers}}
+
+\hypertarget{bodmas-rule}{%
+\section{BODMAS rule}\label{bodmas-rule}}
+
+\hypertarget{linear-equations}{%
+\section{Linear equations}\label{linear-equations}}
+
+A linear algebra term is a term with a variable that has a power of 1. While a linear algebra expression is a combination of one or more linear terms connected by addition or subtraction operations or both. Therefore, a linear equation can be defined as an equation consisting of linear algebraic expressions or linear algebraic expressions and numbers.
+
+\hypertarget{linear-equation-with-one-variable}{%
+\subsection{Linear equation with one variable}\label{linear-equation-with-one-variable}}
+
+As the name implies, namely \texttt{one-variable\ linear\ equation} is identified with the \texttt{=} sign (equal to) and contains \(1\) (one) unknown. Basically, a one-variable linear equation is an equation in the form of an open sentence that is connected by a \texttt{=} (equal to) sign and only contains or has \(1\) unknown.
+
+Why is it said to be an open sentence? Because the basic concept of an open sentence is a sentence whose truth cannot be known, it could be true, it could be wrong. For example, \(x+4=9\), if \(x=5\) then, the sentence is \(true\), because it is true that \(5+4=9\), but if \(x=1\), then the sentence is \(false\), because \(1+4=5\), not \(9\).
+
+Well, in general the form of a one-variable linear equation is
+
+\[ax+b=0\]
+
+where \(a\) = coefficient; \(b\) = constant; and \(x\) = variable.
+
+Keep in mind that the variable used does not have to be a variable \(x\), \(x\) in the equation only represents or represents a variable, for example \(2y+5=0\), where the coefficient is \(2\), the variable is \(y\), and the constant is \(5\).
+
+Try again with the linear equation \(4p–4=0\), then the coefficient is \(4\), the variable is \(p\), and the constant is \(-4\) (do not forget the minus, guys).
+
+\hypertarget{graphing-linear-equations}{%
+\section{Graphing linear equations}\label{graphing-linear-equations}}
+
+\begin{verbatim}
+## -- Attaching packages --------------------------------------- tidyverse 1.3.1 --
+\end{verbatim}
+
+\begin{verbatim}
+## v ggplot2 3.3.3     v purrr   0.3.4
+## v tibble  3.1.2     v dplyr   1.0.6
+## v tidyr   1.1.3     v stringr 1.4.0
+## v readr   1.4.0     v forcats 0.5.1
+\end{verbatim}
+
+\begin{verbatim}
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+\end{verbatim}
+
+\includegraphics{Business-Mathematics-for-UiTM_files/figure-latex/unnamed-chunk-1-1.pdf} \includegraphics{Business-Mathematics-for-UiTM_files/figure-latex/unnamed-chunk-1-2.pdf}
+
+\hypertarget{calculattion-on-percentage}{%
+\section{Calculattion on percentage}\label{calculattion-on-percentage}}
+
+\hypertarget{ratio}{%
+\section{Ratio}\label{ratio}}
+
+In general, ratio is a way to relate or compare between two items or more. In this book, we will discuss the concept of ratio of two quantities and ratio of three quatities. An important note for consideration when dealing mathematical problems with ratio is to make sure that comparison is on quatities with the same unit of measurement.
+
+\hypertarget{ratio-of-two-quantities}{%
+\subsection{Ratio of two quantities}\label{ratio-of-two-quantities}}
+
+Ratio of two quantities is a comparison between two quantities that have the same unit. The ratio of two quantities can be written in the form \(a:b\) or \(\frac{a}{b}\), provided that \(b \neq 0\) and \(a\) and \(b\) have the same unit.
+
+\textbf{Example 1}\\
+The ratio of money at hand for Zul and Jefri is \(3:5\). Zul has RM210.\\
+(a) Calculate Jefri's money.\\
+(b) Given that the ratio of money had by Zul to Mat is \(2:7\), calculate the sum of money that both Zul and Mat have.
+
+\emph{Solution}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+\end{enumerate}
+
+\begin{longtable}[]{@{}ccc@{}}
+\toprule
+Zul & Jefri & Total \\
+\midrule
+\endhead
+3 & 5 & 8 \\
+210 & x & \\
+\bottomrule
+\end{longtable}
+
+We consider any two columns with one unknown; i.e., we choose column first two columns.
+
+\[\frac{3}{210} =\ \frac{5}{x}\]
+\[x =\ \frac{5}{3}(210)\]
+\[x =\ RM350\]
+
+~
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+\end{enumerate}
+
+\begin{longtable}[]{@{}ccc@{}}
+\toprule
+Zul & Mat & Total \\
+\midrule
+\endhead
+2 & 7 & 9 \\
+210 & y & z \\
+\bottomrule
+\end{longtable}
+
+Since the question asked for the sum of money, we have two options to solve the problem. First, by calculating the money that Mat have and sum with Zul's money; or, secondly, we can calculate the total directly.
+
+To calculate the total directly, we used the first and third column.
+
+\[\frac{2}{210}=\frac{9}{z}\]
+\[z=\frac{9}{2}(210)\]
+\[z=RM945\]
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+\end{enumerate}
+
+\begin{longtable}[]{@{}ccc@{}}
+\toprule
+Zul & Jefri & Total \\
+\midrule
+\endhead
+3 & 5 & 8 \\
+210 & x & \\
+\bottomrule
+\end{longtable}
+
+We consider any two columns with one unknown; i.e., we choose column first two columns.
+
+\[\frac{3}{210} =\ \frac{5}{x}\]
+\[x =\ \frac{5}{3}(210)\]
+\[x =\ RM350\]
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+\end{enumerate}
+
+\begin{longtable}[]{@{}ccc@{}}
+\toprule
+Zul & Mat & Total \\
+\midrule
+\endhead
+2 & 7 & 9 \\
+210 & y & z \\
+\bottomrule
+\end{longtable}
+
+Since the question asked for the sum of money, we have two options to solve the problem. First, by calculating the money that Mat have and sum with Zul's money; or, secondly, we can calculate the total directly.
+
+To calculate the total directly, we used the first and third column.
+
+\[\frac{2}{210}=\frac{9}{z}\]
+\[z=\frac{9}{2}(210)\]
+\[z=RM945\]
+
+\hypertarget{simple-interest-and-bank-discount}{%
+\chapter{Simple Interest and Bank Discount}\label{simple-interest-and-bank-discount}}
+
+Insert contents here.
+
+\hypertarget{compound-interest}{%
+\chapter{Compound Interest}\label{compound-interest}}
+
+Insert contents here.
+
+\hypertarget{installment-purchase}{%
+\chapter{Installment Purchase}\label{installment-purchase}}
+
+Insert contents here.
+
+\hypertarget{mathematics-of-trading}{%
+\chapter{Mathematics of Trading}\label{mathematics-of-trading}}
+
+Insert contents here.
+
+\hypertarget{mathematics-of-retailing}{%
+\chapter{Mathematics of Retailing}\label{mathematics-of-retailing}}
+
+Insert contents here.
+
+  \bibliography{book.bib}
+
+\end{document}
